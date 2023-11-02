@@ -1,8 +1,13 @@
 ### retos###
-def fibonacci(n):
-    if n == 0 or n == 1:
-        return n
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
+def fibonacci():
+    
+    prev = 0
+    next = 1
 
-print(fibonacci(7))
+    for i in range(0,51):
+        print(prev)
+        fib = prev + next
+        prev = next
+        next = fib
+
+fibonacci()
